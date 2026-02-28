@@ -5,7 +5,7 @@
 #define QUOTES_IN true
 #define QUOTES_OUT false
 
-// typedef bool quotes_state_t;
+// Type def bool quotes_state_t;
 
 enum error_code { ERR_NO_FILE = -1, ERR_BAD_NAME = -2, ERR_OPEN_FAILED = -3 };
 
@@ -21,11 +21,7 @@ enum State {
     ESCAPE_IN_CHAR
 };
 
-// quotes_state_t toggle_quotes_state(quotes_state_t quotes_state) {
-//     return (quotes_state == QUOTES_IN) ? QUOTES_OUT : QUOTES_IN;
-// }
-
-bool is_valid_c_filename(const char* filename) {  // check file name
+bool is_valid_c_filename(const char* filename) {  // check filename
     if (filename == NULL || *filename == '\0') return false;
 
     const char* dot = strrchr(filename, '.');
@@ -45,7 +41,6 @@ bool is_valid_c_filename(const char* filename) {  // check file name
 int main(int argc, char* argv[]) {
     int ch;
     int prev_ch = -1;
-    //    quotes_state_t quotes_state = QUOTES_OUT;
     enum State state = NORMAL;
 
     if (argc != 2) {
