@@ -5,8 +5,6 @@
 #define QUOTES_IN true
 #define QUOTES_OUT false
 
-// Type def bool quotes_state_t;
-
 enum error_code { ERR_NO_FILE = -1, ERR_BAD_NAME = -2, ERR_OPEN_FAILED = -3 };
 
 enum State {
