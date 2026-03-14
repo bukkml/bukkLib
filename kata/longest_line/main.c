@@ -2,9 +2,9 @@
 
 #define MAXLEN 1000
 
-int getline_(char line[MAXLEN], int lim) {
+int getline_(char line[MAXLEN]) {
     int c, i;
-    for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i) {
+    for (i = 0; i < MAXLEN - 1 && (c = getchar()) != EOF && c != '\n'; ++i) {
         line[i] = c;
     }
 
@@ -31,7 +31,7 @@ int main() {
     char longest[MAXLEN];  // Самая длинная строка
 
     max = 0;
-    while ((len = getline_(line, MAXLEN)) > 0) {
+    while ((len = getline_(line)) > 0) {
         if (len > max) {
             max = len;
             copy(longest, line);
