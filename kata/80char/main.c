@@ -4,7 +4,7 @@
 #define MAXLEN 1000
 #define MAXLINES 10
 
-int getline_(char line[MAXLEN]) {
+int getline_(char *line) {
     int c, i;
     for (i= 0; i < MAXLEN - 1 && (c = getchar()) != EOF && c != '\n'; ++i) {
         line[i] = c;
@@ -18,7 +18,7 @@ int getline_(char line[MAXLEN]) {
     return i;
 }
 
-void copy(char to[MAXLEN], char from[MAXLEN]) {
+void copy(char *to, const char *from) {
     int i = 0;
     while ((to[i] = from[i]) != '\0') {
         i++;
