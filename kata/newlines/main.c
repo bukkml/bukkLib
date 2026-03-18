@@ -6,7 +6,7 @@
 
 static bool is_delim(int c) { return c == ' ' || c == '\t'; }
 
-static void flush_line(char line[], int* len) {
+static void flush_line(char *line, int* len) {
     if (*len > 0) fwrite(line, 1, *len, stdout);
     putchar('\n');
     *len = 0;
