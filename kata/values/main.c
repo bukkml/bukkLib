@@ -33,7 +33,7 @@ int main() {
 
     // NOTE: LONG INT VALUES
     printf(
-        "\n%-25s-%-20lu\t%5s%-20lu\n", "Signed long MIN = ", LONG_MIN,
+        "\n%-25s%-20lu\t%5s%-20lu\n", "Signed long MIN = ", LONG_MIN,
         "MAX = ", LONG_MAX);
     printf(
         "%-25s%-20d\t%5s%-20lu\n", "Unsigned long MIN = ", 0,
@@ -41,7 +41,7 @@ int main() {
 
     // NOTE: LONG LONG VALUES
     printf(
-        "\n%-25s-%-20llu\t%5s%-20llu\n",
+        "\n%-25s%-20llu\t%5s%-20llu\n",
         "Signed long long MIN = ", LONG_LONG_MIN, "MAX = ", LONG_LONG_MAX);
     printf(
         "%-25s%-20d\t%5s%-20llu\n", "Unsigned long long MIN = ", 0,
@@ -68,8 +68,8 @@ int main() {
 
     // NOTE: CHAR VALUES
     printf(
-        "\n%-25s-%-20.0f\t%5s%-20.0f\n",
-        "Signed char MIN = ", pow(2, sizeof(char) * BITS - 1),
+        "\n%-25s%-20.0f\t%5s%-20.0f\n",
+        "Signed char MIN = ", pow(-2, sizeof(char) * BITS - 1),
         "MAX = ", pow(2, sizeof(char) * BITS - 1) - 1);
     printf(
         "%-25s%-20d\t%5s%-20.0f\n", "Unsigned char MIN = ", 0,
@@ -77,8 +77,8 @@ int main() {
 
     // NOTE: INT VALUES
     printf(
-        "\n%-25s-%-20.0f\t%5s%-20.0f\n",
-        "Signed int MIN = ", pow(2, sizeof(int) * BITS - 1),
+        "\n%-25s%-20.0f\t%5s%-20.0f\n",
+        "Signed int MIN = ", pow(-2, sizeof(int) * BITS - 1),
         "MAX = ", pow(2, sizeof(int) * BITS - 1) - 1);
     printf(
         "%-25s%-20d\t%5s%-20.0f\n", "Unsigned int MIN = ", 0,
@@ -86,8 +86,8 @@ int main() {
 
     // NOTE: SHORT INT VALUES
     printf(
-        "\n%-25s-%-20.0f\t%5s%-20.0f\n",
-        "Signed short MIN = ", pow(2, sizeof(short) * BITS - 1),
+        "\n%-25s%-20.0f\t%5s%-20.0f\n",
+        "Signed short MIN = ", pow(-2, sizeof(short) * BITS - 1),
         "MAX = ", pow(2, sizeof(short) * BITS - 1) - 1);
     printf(
         "%-25s%-20d\t%5s%-20.0f\n", "Unsigned short MIN = ", 0,
@@ -95,8 +95,8 @@ int main() {
 
     // NOTE: LONG INT VALUES
     printf(
-        "\n%-25s-%-20lu\t%5s%-20lu\n",
-        "Signed long MIN = ", (long)pow(2, sizeof(long) * BITS - 1),
+        "\n%-25s%-20lu\t%5s%-20lu\n",
+        "Signed long MIN = ", (long)pow(-2, sizeof(long) * BITS - 1),
         "MAX = ", (long)pow(2, sizeof(long) * BITS - 1) - 1);
     printf(
         "%-25s%-20d\t%5s%-20lu\n", "Unsigned long MIN = ", 0,
@@ -110,8 +110,8 @@ int main() {
 
     // NOTE: LONG LONG VALUES
     printf(
-        "\n%-25s-%-20.0f\t%5s%-20.0f\n",
-        "Signed long long MIN = ", pow(2, sizeof(long long) * BITS - 1),
+        "\n%-25s%-20.0f\t%5s%-20.0f\n",
+        "Signed long long MIN = ", pow(-2, sizeof(long long) * BITS - 1),
         "MAX = ", pow(2, sizeof(long long) * BITS - 1) - 1);
     printf(
         "%-25s%-20d\t%5s%-20.0f\n", "Unsigned long long MIN = ", 0,
