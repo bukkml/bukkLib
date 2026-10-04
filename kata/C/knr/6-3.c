@@ -133,6 +133,7 @@ node* AddNode(node* root, char* word) {
         root->right = AddNode(root->right, word);
     return root;
 }
+}
 
 int GetWord(char* word, int lim, FILE* file) {
     int c; 
